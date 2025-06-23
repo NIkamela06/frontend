@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Freelancer Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../main-css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Freelancer Platform</div>
+    <nav>
+      <a href="profile.html">Profile</a>
+      <a href="../index.html">Home</a>
+      <a href="../login.html" onclick="localStorage.removeItem('freelancerId')">Logout</a>
+    </nav>
+  </header>
+  <main>
+    <section class="container card profile-section">
+      <h2>Your Profile</h2>
+      <div id="profileView">
+      </div>
+      <div id="profileEdit">
+        <form id="editProfileForm">
+          <label for="editUsername">Username:</label>
+          <input type="text" id="editUsername" name="username" required>
+          <label for="editEmail">Email:</label>
+          <input type="email" id="editEmail" name="email" required>
+          <label for="editSkills">Skills (comma-separated):</label>
+          <input type="text" id="editSkills" name="skills" required>
+          <button type="submit" class="btn">Save Changes</button>
+          <button type="button" onclick="cancelEdit()" class="btn cancel-btn">Cancel</button>
+        </form>
+      </div>
+      <button id="editBtn" class="btn">Edit Profile</button>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Freelancer Platform</p>
+  </footer>
+  <script src="profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Platform</title>
+    <link rel="stylesheet" href="./main-css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Freelancer Platform</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <main>
+       
+        <section id="search">
+            <h2>Search for Freelancers</h2>
+            <input type="text" id="searchInput" placeholder="Search by skill...">
+            <button onclick="searchFreelancers()">Search</button>
+            <div id="freelancerResults"></div>
+        </section>
+
+        <section id="freelancerProfile" style="display: none;">
+        </section>
+
+        
+        <section id="featuredFreelancers">
+            <h2>Featured Freelancers</h2>
+            <div id="featuredFreelancersList"></div>
+        </section>
+
+        
+        <section id="contactUs">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" id="contactName" placeholder="Your Name" required>
+                <input type="email" id="contactEmail" placeholder="Your Email" required>
+                <textarea id="contactMessage" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Freelancer Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,555 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ef 100%);
+  color: #222;
+}
+
+header {
+  background: #2d3748;
+  color: #fff;
+  padding: 32px 0;
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: #4CAF50;
+}
+
+nav a {
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #d4f1d4;
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 48px auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(44,62,80,0.10);
+  padding: 40px;
+}
+
+.card {
+  background: #f9fafb;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.06);
+  padding: 32px;
+  margin-bottom: 32px;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 6px 24px rgba(44,62,80,0.12);
+}
+
+.btn, button {
+  background: linear-gradient(90deg, #3182ce 0%, #63b3ed 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(49,130,206,0.10);
+}
+
+.btn:hover, button:hover {
+  background: linear-gradient(90deg, #225ea8 0%, #4299e1 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.form input, .form select, .form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 12px 0 24px 0;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  background: #f1f5f9;
+  transition: border 0.2s;
+}
+
+.form input:focus, .form select:focus, .form textarea:focus {
+  border-color: #3182ce;
+  outline: none;
+}
+
+.form,
+.form input,
+.form button,
+.form select,
+.form textarea {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.form input,
+.form select,
+.form textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+}
+
+.container,
+.card {
+  overflow: hidden;
+  word-break: break-word;
+}
+
+h1, h2, h3, h4 {
+  color: #2d3748;
+  margin-top: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+a {
+  color: #3182ce;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #225ea8;
+  text-decoration: underline;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3182ce;
+  margin-right: 16px;
+}
+
+#registerForm.container.card {
+  border-left: 8px solid #3182ce;
+  background: linear-gradient(90deg, #e0e7ef 60%, #f8fafc 100%);
+  animation: fadeIn 0.8s;
+  box-shadow: 0 6px 32px rgba(49,130,206,0.10);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+#registerForm h2 {
+  text-align: center;
+  color: #3182ce;
+  margin-bottom: 32px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+#registerForm .form label {
+  font-weight: 600;
+  color: #225ea8;
+  margin-bottom: 6px;
+  display: block;
+}
+
+#registerForm .form input {
+  background: #f1f5f9;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+  transition: border 0.2s, background 0.2s;
+}
+
+#registerForm .form input:focus {
+  border-color: #3182ce;
+  background: #e6f0fa;
+  outline: none;
+}
+
+#registerForm .btn {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(49,130,206,0.10);
+  transition: background 0.2s, transform 0.2s;
+}
+
+#registerForm .btn:hover {
+  background: linear-gradient(90deg, #225ea8 0%, #4299e1 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+#registerForm a {
+  color: #3182ce;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+#registerForm a:hover {
+  color: #225ea8;
+  text-decoration: underline;
+}
+
+#loginForm.container {
+  border-left: 8px solid #3182ce;
+  background: linear-gradient(90deg, #e0e7ef 60%, #f8fafc 100%);
+  animation: fadeIn 0.8s;
+  box-shadow: 0 6px 32px rgba(49,130,206,0.10);
+  overflow: hidden;
+}
+
+#loginForm h2 {
+  text-align: center;
+  color: #3182ce;
+  margin-bottom: 32px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+#loginForm .form label {
+  font-weight: 600;
+  color: #225ea8;
+  margin-bottom: 6px;
+  display: block;
+}
+
+#loginForm .form input {
+  background: #f1f5f9;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+  transition: border 0.2s, background 0.2s;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#loginForm .form input:focus {
+  border-color: #3182ce;
+  background: #e6f0fa;
+  outline: none;
+}
+
+#loginForm .btn {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 8px rgba(49,130,206,0.10);
+  transition: background 0.2s, transform 0.2s;
+}
+
+#loginForm .btn:hover {
+  background: linear-gradient(90deg, #225ea8 0%, #4299e1 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+#loginForm a {
+  color: #3182ce;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+#loginForm a:hover {
+  color: #225ea8;
+  text-decoration: underline;
+}
+
+/* Additional styles from styles.css that are not duplicates */
+section#registerForm, section#loginForm {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+#freelancerProfile {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+#freelancerProfile h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+#freelancerProfile p {
+  margin: 5px 0;
+  color: #555;
+}
+
+#freelancerResults div {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#freelancerResults div button {
+  width: auto;
+  padding: 5px 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#freelancerResults div button:hover {
+  background-color: #c0392b;
+}
+
+.profile-section {
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+#profileEdit {
+  display: none;
+}
+
+
+#editBtn {
+  margin-top: 20px;
+}
+
+.cancel-btn {
+  background: #ccc !important;
+  color: #222 !important;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  header, footer {
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+
+  section#registerForm, section#loginForm {
+    width: 90%;
+  }
+
+  #freelancerResults div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #freelancerResults div button {
+    margin-top: 10px;
+  }
+
+  .profile-section {
+    max-width: 98%;
+    padding: 10px;
+  }
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+p {
+  color: #555;
+}
+
+#featuredFreelancers {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#featuredFreelancers h2 {
+  text-align: center;
+  color: #333;
+}
+
+#featuredFreelancers .card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px 0;
+  transition: box-shadow 0.3s ease;
+}
+
+#featuredFreelancers .card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#featuredFreelancers .card h3 {
+  margin: 0;
+  color: #333;
+}
+
+#featuredFreelancers .card p {
+  color: #555;
+}
+
+#featuredFreelancers .card button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#featuredFreelancers .card button:hover {
+  background-color: #45a049;
+}
+
+#contactUs {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contactUs h2 {
+  text-align: center;
+  color: #333;
+}
+
+#contactUs form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#contactUs input, #contactUs textarea, #contactUs button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#contactUs button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contactUs button:hover {
+  background-color: #2980b9;
+}
+
+.update-btn {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 7px 16px;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.update-btn:hover {
+  background-color: #217dbb;
+}
